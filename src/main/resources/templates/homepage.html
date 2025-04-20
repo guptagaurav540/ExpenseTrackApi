@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expense Tracker Homepage - Track your expenses easily.">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+<div class="container">
+    <!-- Page Heading -->
+    <h1>Expense Tracker</h1>
+
+    <!-- Table to Display Expenses -->
+    <table>
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Amount</th>
+        </tr>
+        </thead>
+        <tbody id="expense-table-body">
+        <!-- Rows will be dynamically inserted here by JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Add Expense Button -->
+    <div class="add-expense">
+        <a href="#add-expense">Add New Expense</a>
+    </div>
+</div>
+
+<!-- JavaScript to Fetch Data from Backend -->
+<script type="module" src="script.js"></script>
+</body>
+</html>
